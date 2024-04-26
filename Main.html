@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groceries</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="#" class="logo">
+        <ion-icon name="fast-food"></ion-icon>
+        GROCERY SHOP
+      </a>
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+        
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+            
+        </div>        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <button class="btn-buy" onclick="navigate()">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+      </div>  
+    </div>
+    
+  </header>
+  <div class="container">
+    <h2 class="title">Groceries</h2>
+    <div class="shop-content">
+      <div class="food-box">
+        <div class="pic">
+          <img src="grocery/Rice.jpg" class="food-img">
+        </div>
+        <h2 class="food-title">Rice</h2>
+        <span class="food-price">Rs.42/kg</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/milk.jpg" class="food-img"></div>
+        <h2 class="food-title">Milk</h2>
+        <span class="food-price">Rs.46/lt</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="grocery/wheat.webp" class="food-img"></div>
+        <h2 class="food-title">Wheat</h2>
+        <span class="food-price">Rs.40/kg</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="grocery/egg.jpg" class="food-img"></div>
+        <h2 class="food-title">Egg(1 Dozen)</h2>
+        <span class="food-price">Rs.65</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="grocery/dal.jpeg" class="food-img"></div>
+        <h2 class="food-title">Toor Dal</h2>
+        <span class="food-price">Rs.200/kg</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="grocery/oil.webp" class="food-img"></div>
+        <h2 class="food-title">Oil</h2>
+        <span class="food-price">Rs.132/li</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="grocery/sugar.jpg" class="food-img"></div>
+        <h2 class="food-title">Sugar</h2>
+        <span class="food-price">Rs.38/kg</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="grocery/maggi.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Maggi</h2>
+        <span class="food-price">Rs.14/packet</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+         
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/sauce.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">sauce</h2>
+        <span class="food-price">Rs.95/bottle</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+    
+      <div class="food-box">
+        <div class="pic"><img src="grocery/pasta.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Pasta</h2>
+        <span class="food-price">Rs.150/packet</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/paneer.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Paneer</h2>
+        <span class="food-price">Rs.60/packet</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+         
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/green tea.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Green tea</h2>
+        <span class="food-price">Rs.150/kg</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/Ghee.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Ghee</h2>
+        <span class="food-price">Rs.785/litre</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/Detergent powder.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Detergent Powder</h2>
+        <span class="food-price">Rs.210/kg</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/Soap.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Soap</h2>
+        <span class="food-price">Rs.52/box</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/Face Wash.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Face Wash</h2>
+        <span class="food-price">Rs.78/bottle</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/Mustard Seed.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Mustard Seed</h2>
+        <span class="food-price">Rs.50/100g</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="grocery/Honey.jpeg.jpg" class="food-img"></div>
+        <h2 class="food-title">Honey</h2>
+        <span class="food-price">Rs.400/litre</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="order.js"></script>
+</body>
+</html>
